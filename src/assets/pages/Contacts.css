@@ -1,0 +1,173 @@
+/* /// ---------------------------
+// Feuille de style de la page Contacts
+/// ----------------------------------------
+/// Nom : Dalyane Bélanger
+/// Matricule : 1678345
+/// Description : Page des contacts.
+/// ------------------------------------------*/
+.contacts-body {
+    padding: 2em 1em 20em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url("../img/svg/bkg-page.svg");
+    background-position: top;
+    background-repeat: repeat-y;
+    background-size: contain;
+}
+.contacts-body h1 {
+    color: var(--blanc);
+    text-align: center;
+    font-family: var(--titre);
+    font-size: 3em;
+    text-shadow: 4px 4px var(--violet);
+    padding-bottom: 32px;
+    margin: 1.2em 1em 1.5em;
+    border-bottom: 2px solid var(--blanc);
+}
+.contacts-body p {
+    color: var(--blanc);
+    font-family: var(--paragraphe);
+    font-size: 0.8em;
+    text-align: center;
+    padding-right: 2.5em;
+}
+.contacts-body .bkg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10em 1em 0.5em;
+    margin: 1em 0;
+    background-image: url("../img/jpg/musicienne.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.contacts-body .bkg a {
+    text-align: center;
+    font-family: var(--paragraphe);
+    text-decoration: none;
+    color: var(--blanc);
+    background-color: var(--cyan);
+    padding: 2em;
+    font-size: 1.2em;
+    font-weight: 700;
+}
+.contacts-body .bkg a:hover {
+    background-color: var(--blanc);
+    color: var(--noir);
+    transition: 0.3s;
+}
+.contacts-body ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.contacts-body ul li {
+    padding: 1em 3em;
+    border-radius: 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.contacts-body ul li a {
+    text-decoration: none;
+    font-family: var(--paragraphe);
+    color: var(--cyan);
+    font-weight: 700;
+    margin: 1em 2em;
+    border-bottom: 2px solid var(--cyan);
+    padding-bottom: 0.9em;
+}
+.contacts-body ul li img {
+    border-radius: 1em;
+    background-image: url("../img/svg/bkg-contact.svg");
+    background-position: center;
+    background-size: cover;
+    margin: 1em;
+    padding: 1em;
+}
+@media screen and (min-width: 768px) {
+    .contacts-body {
+        padding: 2em 1em 20em;
+    }
+    .contacts-body p {
+        color: var(--blanc);
+        font-family: var(--paragraphe);
+        font-size: 1em;
+        text-align: center;
+        padding-bottom: 2em;
+    }
+    .contacts-body .bkg {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 10em 4em 0.5em;
+        margin: 1em 4em;
+        background-image: url("../img/jpg/musicienne.jpg");
+        background-position: center;
+        background-size: cover;
+    }
+    .contacts-body .bkg a {
+        text-align: center;
+        font-family: var(--paragraphe);
+        text-decoration: none;
+        color: var(--blanc);
+        background-color: var(--magenta);
+        padding: 2em;
+        font-size: 2em;
+        font-weight: 700;
+    }
+}
+@media screen and (min-width: 1200px) {
+    
+    .contacts-body p {
+        color: var(--blanc);
+        font-family: var(--paragraphe);
+        font-size: 1em;
+        text-align: center;
+        padding-bottom: 2em;
+    }
+    .contacts-body .bkg {
+        
+        padding: 20em 4em 0.5em;
+        margin: 1em 5em;
+        
+    }
+    .contacts-body ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .contacts-body ul li {
+        padding: 2em 4em;
+        border-radius: 2em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .contacts-body ul li a {
+        text-decoration: none;
+        font-family: var(--paragraphe);
+        color: var(--cyan);
+        font-weight: 700;
+        margin: 1em 2em;
+        border-bottom: 2px solid var(--cyan);
+        padding-bottom: 0.9em;
+        font-size: 1.4em;
+    }
+    .contacts-body ul li img {
+        border-radius: 1em;
+        background-image: url("../img/svg/bkg-contact.svg");
+        background-position: center;
+        background-size: cover;
+        margin: 3em;
+        padding: 3em;
+    }
+}

@@ -1,0 +1,77 @@
+/* /// ---------------------------
+// Feuille de style de la page Accueil
+/// ----------------------------------------
+/// Nom : Dalyane Bélanger
+/// Matricule : 1678345
+/// Description : Page d'Accueil.
+/// ------------------------------------------*/
+.home-body {
+    padding: 2em 0 20em;
+    background-image: url("../img/svg/bkg-page.svg");
+    background-position: top;
+    background-repeat: repeat-x;
+    background-size: contain;
+}
+.home-body .header-titre {
+    margin: 0;
+    padding: 5em 0;
+    background-image: url("../img/jpg/bkg.jpg");
+    background-position: center;
+    background-size: cover;
+    border-bottom: 3px dotted var(--blanc);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.home-body .header-titre img {
+    width: 40%;
+}
+.home-body h1 {
+    color: var(--blanc);
+    font-family: var(--titre);
+    text-align: center;
+    padding: 1em 3em;
+    font-size: 1.2em;
+    
+}
+.home-body .login-temporaire {
+    padding: 2em 1.5em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.home-body a {
+    color: var(--blanc);
+    text-decoration: none;
+    font-family: var(--paragraphe);
+    margin: 0 1.5em;
+}
+
+@media screen and (min-width: 768px) {
+    .home-body .header-titre {
+        padding: 6em 0;
+        
+    }
+    .home-body .login-temporaire {
+        padding: 3em 1.5em;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .home-body {
+        background-size: 70%;
+    }
+    
+    .home-body .header-titre {
+        padding: 10em 0;
+        
+    }
+    .home-body .header-titre img {
+        width: 20%;
+        padding: 2em 0;
+    }
+    .home-body .login-temporaire {
+        padding: 6em 1.5em;
+    }
+}

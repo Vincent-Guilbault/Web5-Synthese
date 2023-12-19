@@ -1,0 +1,101 @@
+/* /// ---------------------------
+// Feuille de style des nouveautés de musique du projet
+/// ----------------------------------------
+/// Nom : Dalyane Bélanger
+/// Matricule : 1678345
+/// Description : Un des modules du projet.
+/// ------------------------------------------*/
+.nouveautes {
+    background-color: var(--mauve);
+    background-image: url("../img/svg/bkg-titre.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 70%;
+    padding: 3em 0 0;
+    margin: 6em 0 0;
+}
+
+.nouveautes h2 {
+   color: var(--blanc);
+   text-align: center;
+   font-family: var(--titre);
+   font-size: 2em;
+   text-shadow: 4px 4px var(--violet);
+   padding-bottom: 32px;
+   margin: 0 72px 32px;
+   border-bottom: 4px solid var(--blanc);
+}
+.nouveautes .gallerie-nouveautes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 1em 0;
+}
+
+.nouveautes .gallerie-nouveautes div {
+    border-radius: 0.5em;
+
+}
+.nouveautes .gallerie-nouveautes div:nth-of-type(1) {
+    width: 70%;
+}
+.nouveautes .gallerie-nouveautes div:nth-of-type(2) {
+    width: 90%;
+}
+.nouveautes .gallerie-nouveautes div:nth-of-type(3) {
+    width: 120%;
+}
+.nouveautes .gallerie-nouveautes div:nth-of-type(4) {
+    width: 90%;
+}
+.nouveautes .gallerie-nouveautes div:nth-of-type(5) {
+    width: 70%;
+}
+
+
+.nouveautes .gallerie-nouveautes img {
+    width: 100%;
+    border-radius: 0.5em;
+    border: 1px solid var(--blanc);
+}
+@media screen and (min-width:768px) {
+    .nouveautes {
+        margin-bottom: 8em;
+    }
+    
+    .nouveautes h2 {
+        font-size: 3em;
+     }
+     
+    .nouveautes .gallerie-nou.nouveautes {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1em;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .nouveautes {
+        background-size: 30%;
+        padding: 3em 1em;
+        position: relative;
+    }
+    .nouveautes h2 {
+        position: absolute;
+        top: 100px;
+        right: 0;
+        font-size: 5em;
+        padding: 0 0 0 2em;
+        text-align: right;
+    }
+    .nouveautes .gallerie-nouveautes {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: right;
+        margin: 1em 40em 1em 5em;
+     
+}
+}

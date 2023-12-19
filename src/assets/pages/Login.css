@@ -1,0 +1,113 @@
+/* /// ---------------------------
+// Feuille de style de la page Authentification
+/// ----------------------------------------
+/// Nom : Dalyane Bélanger
+/// Matricule : 1678345
+/// Description : Page d'Authentification.
+/// ------------------------------------------*/
+.connexion {
+    padding: 2em 0 20em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../img/svg/bkg-page.svg");
+    background-position: top;
+    background-repeat: repeat-y;
+    background-size: contain;
+}
+.connexion h1 {
+    color: var(--blanc);
+    text-align: center;
+    font-family: var(--titre);
+    font-size: 3em;
+    text-shadow: 4px 4px var(--violet);
+    padding-bottom: 32px;
+    margin: 0 0.9em 1.5em;
+    border-bottom: 2px solid var(--blanc);
+}
+.connexion p {
+    font-family: var(--paragraphe);
+    font-size: 2em;
+    font-weight: 600;
+    color: var(--gris-pale);
+    margin-bottom: 2em;
+}
+.connexion button {
+    background-color: var(--cyan);
+    border: none;
+    padding: 1.6em 2em;
+    margin: 0 4em 2em;
+    border-radius: 2em;
+    color: var(--blanc);
+    font-family: var(--paragraphe);
+    font-weight: 600;
+    display: block;
+
+    
+}
+.connexion button:hover {
+    background-color: var(--violet);
+    transition: 0.4s;
+}
+.connexion a {
+    font-family: var(--paragraphe);
+    text-decoration: none;
+    color: var(--blanc);
+    margin: 0.5em 0;
+}
+
+.connexion a:hover {
+    color: var(--cyan);
+    transition: 0.4s; 
+}
+.connexion .forms {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 5em;
+}
+.connexion .forms label {
+    color: var(--blanc);
+    font-family: var(--paragraphe);
+    text-align: left;
+    margin-bottom: 8px;
+    width: 80%;
+}
+.connexion .forms input {
+    padding: 1.5em;
+    border-radius: 2em;
+    border: none;
+    margin: 0.5em 10em 2em;
+    width: 80%;
+    background-color: var(--gris-pale);
+}
+.connexion .forms input:hover {
+    background-color: var(--gris);
+    transition: 0.2s;
+}
+
+@media screen and (min-width: 768px) {
+    .connexion {
+        padding: 2em 4em 20em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .connexion p {
+        font-family: var(--paragraphe);
+        font-size: 2em;
+        font-weight: 600;
+        color: var(--gris);
+        margin: 2em 0;
+    }
+    .connexion button {
+        padding: 2em 3em;
+        font-size: 0.9em;
+    
+        
+    }
+}
